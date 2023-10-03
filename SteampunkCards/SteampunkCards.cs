@@ -60,6 +60,19 @@ namespace SteampunkCards
             CustomCard.BuildCard<SteamPoweredRevolver>();
             CustomCard.BuildCard<TemporalModulator>();
             CustomCard.BuildCard<VaultAugmentator>();
+            CustomCard.BuildCard<BoilerplateArmorPiercingRounds>();
+            CustomCard.BuildCard<BoilerplateShoulderStock>();
+            CustomCard.BuildCard<BrassEjectorMechanism>();
+            CustomCard.BuildCard<CogwheelEnhancedBullets>();
+            CustomCard.BuildCard<CogwheelMedpack>();
+            CustomCard.BuildCard<MechanicalHeartImplant>();
+            CustomCard.BuildCard<MultiBarrelSteamShotgun>();
+            CustomCard.BuildCard<PressureBoostedBullets>();
+            CustomCard.BuildCard<PressureRegulatingChestplate>();
+            CustomCard.BuildCard<RapidReloadBandolier>();
+            //CustomCard.BuildCard<SteamInfusedAmmunition>();
+            CustomCard.BuildCard<SteamPoweredRailgun>();
+            CustomCard.BuildCard<SynchronizedShotTimer>();
         }
 
         public static CardInfo FindCard(string cardName)
