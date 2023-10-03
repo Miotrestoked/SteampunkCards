@@ -10,7 +10,7 @@ namespace SteampunkCards.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage = 1.40f;
-            gun.attackSpeed = 0.9f;
+            gun.attackSpeed = 1.1f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
