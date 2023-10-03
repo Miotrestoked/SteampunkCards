@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <LangVersion>7</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RoundsFolder>D:\SteamLibrary\steamapps\common\ROUNDS</RoundsFolder>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>$(RoundsFolder)\Mods\BepInEx_x64_5.4.19.0\BepInEx\core\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>$(RoundsFolder)\Rounds_Data\Managed\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="BepInEx">
+        <HintPath>$(RoundsFolder)\Mods\BepInEx_x64_5.4.19.0\BepInEx\core\BepInEx.dll</HintPath>
+      </Reference>
+      <Reference Include="CardChoiceSpawnUniqueCardPatch">
+        <HintPath>$(RoundsFolder)\Mods\BepInEx_x64_5.4.19.0\BepInEx\plugins\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
+      </Reference>
+      <Reference Include="ModdingUtils">
+        <HintPath>$(RoundsFolder)\Mods\BepInEx_x64_5.4.19.0\BepInEx\plugins\ModdingUtils.dll</HintPath>
+      </Reference>
+      <Reference Include="UnboundLib">
+        <HintPath>$(RoundsFolder)\Mods\BepInEx_x64_5.4.19.0\BepInEx\plugins\UnboundLib.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>$(RoundsFolder)\Rounds_Data\Managed\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>$(RoundsFolder)\Rounds_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="Cards\" />
+    </ItemGroup>
+    
+</Project>
