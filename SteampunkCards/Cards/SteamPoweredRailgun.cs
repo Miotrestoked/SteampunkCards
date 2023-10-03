@@ -10,7 +10,7 @@ namespace SteampunkCards.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.damage = 1.80f;
-            gun.attackSpeed = 0.5f;
+            gun.attackSpeed = 1.5f;
             gun.projectileSpeed = 2f;
         }
 

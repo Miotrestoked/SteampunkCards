@@ -16,6 +16,7 @@ namespace SteampunkCards.Cards
         {
             //Edits values on player when card is selected
             gun.bursts = 3;
+            gun.timeBetweenBullets = 0.1f;
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,

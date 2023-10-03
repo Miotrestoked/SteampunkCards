@@ -9,7 +9,7 @@ namespace SteampunkCards.Cards
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.cooldown = 0.75f;
+            block.cdMultiplier = 0.75f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,

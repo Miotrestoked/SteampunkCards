@@ -19,7 +19,7 @@ namespace SteampunkCards.Cards
             var objectToSpawn = new ObjectsToSpawn();
             var item = new GameObject();
             var rhb = item.AddComponent<RayHitBash>();
-            rhb.baseStunTime = 0.5f;
+            rhb.baseStunTime = 0.25f;
             objectToSpawn.AddToProjectile = item;
 
             var list = gun.objectsToSpawn.ToList();

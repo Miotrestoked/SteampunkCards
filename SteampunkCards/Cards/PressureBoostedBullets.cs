@@ -59,7 +59,7 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                 positive = true,
-                stat = "Damagae",
+                stat = "Damage",
                 amount = "+25%",
                 simepleAmount = CardInfoStat.SimpleAmount.Some
                 }

@@ -10,7 +10,7 @@ namespace SteampunkCards.Cards
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
             gun.numberOfProjectiles = 4;
-            gun.spread = 40 / 360f;
+            gun.spread = 120 / 360f;
             gun.damage = 0.6f;
         }
 
@@ -61,7 +61,7 @@ namespace SteampunkCards.Cards
                 {
                     positive = false,
                     stat = "Spread",
-                    amount = "+40 degrees",
+                    amount = "+120 degrees",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()

@@ -9,7 +9,7 @@ namespace SteampunkCards.Cards
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            block.additionalBlocks = 1;
+            block.additionalBlocks = 2;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -51,8 +51,8 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Block",
-                    amount = "+1",
+                    stat = "Blocks",
+                    amount = "+2",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };

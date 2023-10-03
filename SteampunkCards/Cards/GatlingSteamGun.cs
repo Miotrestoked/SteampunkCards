@@ -10,7 +10,7 @@ namespace SteampunkCards.Cards
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.attackSpeed = 3f;
+            gun.attackSpeed = 0.33f;
             gun.reloadTime = 1.7f;
             gun.spread = 50 / 360f;
         }
@@ -70,7 +70,7 @@ namespace SteampunkCards.Cards
                 {
                     positive = false,
                     stat = "Spread",
-                    amount = "+50",
+                    amount = "+50 degrees",
                     simepleAmount = CardInfoStat.SimpleAmount.aLotOf
                 }
             };

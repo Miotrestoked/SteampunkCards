@@ -9,7 +9,7 @@ namespace SteampunkCards.Cards
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 3;
+            gun.ammo = 5;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A small satchel that attaches to your belt, with capacity for a small bit of ammo.";
+            return "A small satchel that attaches to your belt, with capacity for a bit of ammo.";
         }
 
         protected override GameObject GetCardArt()
@@ -52,7 +52,7 @@ namespace SteampunkCards.Cards
                 {
                     positive = true,
                     stat = "Ammo",
-                    amount = "+3",
+                    amount = "+5",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };

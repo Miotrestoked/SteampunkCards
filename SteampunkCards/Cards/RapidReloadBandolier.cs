@@ -16,7 +16,7 @@ namespace SteampunkCards.Cards
         {
             //Edits values on player when card is selected
             gun.attackSpeed *= 0.75f;
-            gun.reloadTime = gun.attackSpeed;
+            gunAmmo.reloadTime = gun.attackSpeed;
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
