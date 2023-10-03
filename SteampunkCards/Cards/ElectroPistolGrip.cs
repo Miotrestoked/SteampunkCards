@@ -1,3 +1,4 @@
+using System.Linq;
 using UnboundLib.Cards;
 using UnityEngine;
 
@@ -15,7 +16,15 @@ namespace SteampunkCards.Cards
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            //TODO add stun
+            var objectToSpawn = new ObjectsToSpawn();
+            var item = new GameObject();
+            var rhb = item.AddComponent<RayHitBash>();
+            rhb.baseStunTime = 0.5f;
+            objectToSpawn.AddToProjectile = item;
+
+            var list = gun.objectsToSpawn.ToList();
+            list.Add(objectToSpawn);
+            gun.objectsToSpawn = list.ToArray();
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -31,7 +40,8 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "The embedded electric generator in this pistol grip generates a charge that will stun an opponent upon impact.";
+            return
+                "The embedded electric generator in this pistol grip generates a charge that will stun an opponent upon impact.";
         }
 
         protected override GameObject GetCardArt()
