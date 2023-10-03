@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using BepInEx;
 using HarmonyLib;
+using SteampunkCards.Cards;
+using UnboundLib.Cards;
 
 namespace SteampunkCards
 {
@@ -39,6 +41,25 @@ namespace SteampunkCards
 
         void loadCards()
         {
+            CustomCard.BuildCard<AegisRejuvenatorUnit>();
+            CustomCard.BuildCard<BarrierGenerator>();
+            CustomCard.BuildCard<CacheAugmentator>();
+            CustomCard.BuildCard<ChamberExtension>();
+            CustomCard.BuildCard<ClockworkTriggerMechanism>();
+            CustomCard.BuildCard<ClockworkWingsuit>();
+            CustomCard.BuildCard<DeflectorArray>();
+            CustomCard.BuildCard<ElectroPistolGrip>();
+            CustomCard.BuildCard<ExpandedReservoir>();
+            CustomCard.BuildCard<GatlingSteamGun>();
+            CustomCard.BuildCard<GearDrivenSniperScope>();
+            CustomCard.BuildCard<JumpEnhancer>();
+            CustomCard.BuildCard<LeapAmplifier>();
+            CustomCard.BuildCard<PneumaticRifleStock>();
+            CustomCard.BuildCard<SteamEnhancedAmmoLoader>();
+            CustomCard.BuildCard<SteamPoweredBoots>();
+            CustomCard.BuildCard<SteamPoweredRevolver>();
+            CustomCard.BuildCard<TemporalModulator>();
+            CustomCard.BuildCard<VaultAugmentator>();
         }
 
         public static CardInfo FindCard(string cardName)
