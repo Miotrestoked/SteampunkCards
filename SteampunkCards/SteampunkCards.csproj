@@ -36,8 +36,5 @@
       </Reference>
     </ItemGroup>
     
-    <ItemGroup>
-      <Folder Include="Cards\" />
-    </ItemGroup>
     
 </Project>
