@@ -15,7 +15,7 @@ namespace SteampunkCards.Cards
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gun.attackSpeed *= 0.75f;
+            gun.attackSpeed *= 1.5f;
             gunAmmo.reloadTime = gun.attackSpeed;
         }
 
@@ -52,8 +52,15 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Reload speed",
-                    amount = "-25%",
+                    stat = "Attack speed",
+                    amount = "-50%",
+                    simepleAmount = CardInfoStat.SimpleAmount.Some
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Reload time = Attack speed",
+                    amount = "",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };

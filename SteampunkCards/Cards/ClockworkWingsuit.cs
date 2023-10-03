@@ -15,7 +15,7 @@ namespace SteampunkCards.Cards
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            gravity.gravityForce *= 0.7f;
+            gravity.gravityForce *= 0.5f;
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -52,7 +52,7 @@ namespace SteampunkCards.Cards
                 {
                     positive = true,
                     stat = "Gravity",
-                    amount = "-30%",
+                    amount = "-50%",
                     simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
                 }
             };
