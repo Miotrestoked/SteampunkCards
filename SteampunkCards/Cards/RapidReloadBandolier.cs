@@ -51,16 +51,16 @@ namespace SteampunkCards.Cards
             {
                 new CardInfoStat()
                 {
-                    positive = true,
+                    positive = false,
                     stat = "Attack speed",
-                    amount = "-50%",
+                    amount = "+50%",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Reload time = Attack speed",
-                    amount = "",
+                    stat = "Is set to attack speed",
+                    amount = "Reload time",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }
             };
