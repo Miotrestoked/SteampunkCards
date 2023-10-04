@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using BepInEx;
 using HarmonyLib;
 using SteampunkCards.Cards;
+using SteampunkCards.Cards.Curses;
 using UnboundLib.Cards;
 
 namespace SteampunkCards
@@ -41,6 +42,8 @@ namespace SteampunkCards
 
         void loadCards()
         {
+            var cards = ModdingUtils.Utils.Cards.instance;
+            
             CustomCard.BuildCard<AegisRejuvenatorUnit>();
             CustomCard.BuildCard<BarrierGenerator>();
             CustomCard.BuildCard<CacheAugmentator>();
@@ -73,6 +76,20 @@ namespace SteampunkCards
             //CustomCard.BuildCard<SteamInfusedAmmunition>();
             CustomCard.BuildCard<SteamPoweredRailgun>();
             CustomCard.BuildCard<SynchronizedShotTimer>();
+            CustomCard.BuildCard<Goggles>();
+            CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
+            
+            void BuffCardInit(CardInfo c)
+            {
+                cards.AddHiddenCard(c);
+                buffCards.Add(c);
+            }
+
+            void DebuffCardInit(CardInfo c)
+            {
+                cards.AddHiddenCard(c);
+                debuffCards.Add(c);
+            }
         }
 
         public static CardInfo FindCard(string cardName)
@@ -81,5 +98,7 @@ namespace SteampunkCards
 
             return cards.GetCardWithObjectName($"__{ModInitials}__{cardName}");
         }
+        
+        
     }
 }
