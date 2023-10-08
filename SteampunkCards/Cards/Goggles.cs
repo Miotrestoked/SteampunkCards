@@ -37,7 +37,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "You can see a little better, or are the others just bigger?.";
+            return "You can see a little better, or are the others just bigger?";
         }
 
         protected override GameObject GetCardArt()
@@ -57,7 +57,7 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "For each enemy",
+                    stat = "To each enemy",
                     amount = "+10% size",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
