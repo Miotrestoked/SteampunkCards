@@ -75,6 +75,11 @@ namespace SteampunkCards
             CustomCard.BuildCard<RapidReloadBandolier>();
             CustomCard.BuildCard<SteamPoweredRailgun>();
             CustomCard.BuildCard<Goggles>();
+            CustomCard.BuildCard<SteamFortress>();
+            CustomCard.BuildCard<SquishPiston>();
+            CustomCard.BuildCard<PneumaticArmor>();
+            CustomCard.BuildCard<ExoSuit>();
+            CustomCard.BuildCard<BrassBulwark>();
             CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
             
             void BuffCardInit(CardInfo c)
