@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "An upgraded jump enhancer that has been fitted with extra steam capacity, allowing for a triple jump.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -41,7 +41,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A gadget that optimizes the space in your gun's magazine, making room for a bit more ammo.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

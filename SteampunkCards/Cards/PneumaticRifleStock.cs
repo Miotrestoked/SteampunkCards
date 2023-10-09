@@ -32,7 +32,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A special attachment that absorbs recoil and assists with rapid follow-up shots.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -42,7 +42,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
 
         protected override CardInfoStat[] GetStats()

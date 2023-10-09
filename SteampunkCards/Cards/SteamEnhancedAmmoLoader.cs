@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "An ammo loader that uses steam power to more efficiently reload the gun it's attached to.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -41,7 +41,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

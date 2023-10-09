@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A small satchel that attaches to your belt, with capacity for a bit of ammo.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

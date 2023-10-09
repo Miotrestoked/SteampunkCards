@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A time manipulation device for your shield. It slightly reduces the cooldown between blocks.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

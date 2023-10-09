@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "An advanced shield gadget that equips your block with a deflector array, greatly improving its functionality.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -41,7 +41,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

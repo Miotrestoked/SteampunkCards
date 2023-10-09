@@ -32,7 +32,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A modular attachment for firearms that incorporates a miniature steam boiler that quickly fires another round.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -52,7 +52,7 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Bursts",
+                    stat = "Bullet burst",
                     amount = "2",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 }

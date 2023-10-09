@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A portable machine that slightly optimizes your shield's recovery mechanism.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

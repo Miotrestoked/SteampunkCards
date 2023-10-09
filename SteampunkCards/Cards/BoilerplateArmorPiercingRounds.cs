@@ -32,7 +32,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "Specially designed armor-piercing ammunition that can penetrate even the toughest of armors.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -42,7 +42,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

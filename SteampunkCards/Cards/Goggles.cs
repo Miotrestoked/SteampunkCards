@@ -20,7 +20,7 @@ namespace SteampunkCards.Cards
             
             var cards = ModdingUtils.Utils.Cards.instance;
             
-            opponents.ForEach(opp => cards.AddCardToPlayer(opp, SteampunkCards.FindCard("Zoomed in"), false, "ZI", 0, 0));
+            opponents.ForEach(opp => cards.AddCardToPlayer(opp, SteampunkCards.FindCard("Zoomed In"), false, "ZI", 0, 0));
             //Edits values on player when card is selected
         }
 
@@ -37,7 +37,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "You can see a little better, or are the others just bigger?";
+            return "All enemies gain 15% size";
         }
 
         protected override GameObject GetCardArt()
@@ -47,7 +47,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()
@@ -58,7 +58,7 @@ namespace SteampunkCards.Cards
                 {
                     positive = true,
                     stat = "To each enemy",
-                    amount = "+10% size",
+                    amount = "+15% size",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };

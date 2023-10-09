@@ -33,7 +33,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A scope with a gear-driven adjustment system, allowing for quick and precise long-range shots.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -43,7 +43,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
 
         protected override CardInfoStat[] GetStats()

@@ -73,9 +73,7 @@ namespace SteampunkCards
             CustomCard.BuildCard<PressureBoostedBullets>();
             CustomCard.BuildCard<PressureRegulatingChestplate>();
             CustomCard.BuildCard<RapidReloadBandolier>();
-            //CustomCard.BuildCard<SteamInfusedAmmunition>();
             CustomCard.BuildCard<SteamPoweredRailgun>();
-            CustomCard.BuildCard<SynchronizedShotTimer>();
             CustomCard.BuildCard<Goggles>();
             CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
             

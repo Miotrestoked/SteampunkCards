@@ -32,7 +32,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "An intricate system that reduces trigger pull and resets the firing mechanism faster, significantly increasing rate of fire.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -42,7 +42,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

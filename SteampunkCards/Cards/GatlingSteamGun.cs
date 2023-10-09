@@ -34,8 +34,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return
-                "A handheld gatling gun that rotates its barrel using steam power. Unleash a barrage of steam-powered bullets onto your opponents!";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -45,7 +44,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

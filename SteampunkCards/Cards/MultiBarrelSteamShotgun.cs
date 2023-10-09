@@ -33,7 +33,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A shotgun with multiple barrels, each equipped with a steam-assisted system.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -43,7 +43,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

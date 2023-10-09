@@ -19,7 +19,7 @@ namespace SteampunkCards.Cards
             var objectToSpawn = new ObjectsToSpawn();
             var item = new GameObject();
             var rhb = item.AddComponent<RayHitBash>();
-            rhb.baseStunTime = 0.10f;
+            rhb.baseStunTime = 0.1f;
             objectToSpawn.AddToProjectile = item;
 
             var list = gun.objectsToSpawn.ToList();
@@ -40,8 +40,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return
-                "The embedded electric generator in this pistol grip generates a charge that will stun an opponent upon impact.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -51,7 +50,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()

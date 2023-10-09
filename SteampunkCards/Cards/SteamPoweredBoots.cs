@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "The built-in steam thrusters in these boots will propel you to new heights.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

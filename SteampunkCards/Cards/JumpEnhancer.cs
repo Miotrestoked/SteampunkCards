@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A little gadget that attaches to your boots. It uses steam to propel you upwards in mid-air, letting you double jump.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

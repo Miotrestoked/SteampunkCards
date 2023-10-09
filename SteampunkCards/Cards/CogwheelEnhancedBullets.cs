@@ -32,7 +32,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "Bullets with miniature cogwheels embedded in their tips.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

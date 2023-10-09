@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A steam-powered brass ejection system that efficiently removes spent cartridges and loads fresh rounds.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

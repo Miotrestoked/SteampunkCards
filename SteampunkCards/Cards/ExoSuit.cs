@@ -3,19 +3,21 @@ using UnityEngine;
 
 namespace SteampunkCards.Cards
 {
-    class SteamInfusedAmmunition : CustomCard
+    class ExoSuit : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats,
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            statModifiers.health = 1.2f;
+            statModifiers.movementSpeed = 1.25f;
+            statModifiers.gravity = 0.75f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
-            //TODO AOE
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -26,12 +28,12 @@ namespace SteampunkCards.Cards
 
         protected override string GetTitle()
         {
-            return "Steam-Infused Ammunition";
+            return "Exo Suit";
         }
 
         protected override string GetDescription()
         {
-            return "Bullets infused with condensed steam that, upon impact, releases a burst of scalding steam.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -41,13 +43,34 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
 
         protected override CardInfoStat[] GetStats()
         {
             return new CardInfoStat[]
             {
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Gravity",
+                    amount = "-25%",
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Health",
+                    amount = "+20%",
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Movement speed",
+                    amount = "+25%",
+                    simepleAmount = CardInfoStat.SimpleAmount.slightlyLower
+                },
             };
         }
 

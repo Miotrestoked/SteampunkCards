@@ -9,7 +9,7 @@ namespace SteampunkCards.Cards
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.ammo = 1;
+            gun.numberOfProjectiles = 1;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A device that enlarges the chamber in your gun, providing space for another bullet.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -51,7 +51,7 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Ammo",
+                    stat = "Bullet",
                     amount = "+1",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }

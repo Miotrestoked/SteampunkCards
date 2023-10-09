@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards.Curses
 
         protected override string GetDescription()
         {
-            return "Should have eaten less cookies.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

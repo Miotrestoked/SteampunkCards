@@ -32,7 +32,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "A chestplate equipped with a steam-powered pressure-regulating system.";
+            return "";
         }
 
         protected override GameObject GetCardArt()

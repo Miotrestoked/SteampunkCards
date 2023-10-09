@@ -33,8 +33,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return
-                "An experimental handheld railgun that uses electromagnetic forces and steam power to launch projectiles at incredible speeds.";
+            return "";
         }
 
         protected override GameObject GetCardArt()
@@ -44,7 +43,7 @@ namespace SteampunkCards.Cards
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Rare;
         }
 
         protected override CardInfoStat[] GetStats()
