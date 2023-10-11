@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SteampunkCards.Cards.Curses
 {
-    class CardridgeConcession : CustomCard
+    class CartridgeConcession : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats,
             CharacterStatModifiers statModifiers, Block block)
@@ -36,7 +36,7 @@ namespace SteampunkCards.Cards.Curses
         
         public override bool GetEnabled()
         {
-            return false;
+            return true;
         }
 
         protected override GameObject GetCardArt()

@@ -1,21 +1,23 @@
+using UnboundLib;
 using UnboundLib.Cards;
 using UnityEngine;
+using SteampunkCards.MonoBehaviours;
 
 namespace SteampunkCards.Cards.Curses
 {
-    class VelocityDampener : CustomCard
+    class GravitationalFlux : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats,
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            gun.projectileSpeed = 0.70f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            player.gameObject.GetOrAddComponent<GravFluxMono>();
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -26,12 +28,12 @@ namespace SteampunkCards.Cards.Curses
 
         protected override string GetTitle()
         {
-            return "Velocity Dampener";
+            return "Gravitational Flux";
         }
 
         protected override string GetDescription()
         {
-            return "";
+            return "Gravity is reversed for two seconds when you block";
         }
         
         public override bool GetEnabled()
@@ -53,13 +55,6 @@ namespace SteampunkCards.Cards.Curses
         {
             return new CardInfoStat[]
             {
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Bullet speed",
-                    amount = "-30%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
-                }
             };
         }
 

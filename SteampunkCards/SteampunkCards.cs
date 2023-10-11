@@ -82,9 +82,12 @@ namespace SteampunkCards
             CustomCard.BuildCard<BrassBulwark>();
             CustomCard.BuildCard<CogsOfConstraint>();
             
-            
             CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
             CustomCard.BuildCard<GyroscopicAnchor>(DebuffCardInit);
+            CustomCard.BuildCard<CartridgeConcession>(DebuffCardInit);
+            CustomCard.BuildCard<GravitronClamp>(DebuffCardInit);
+            CustomCard.BuildCard<VelocityDampener>(DebuffCardInit);
+            CustomCard.BuildCard<GravitationalFlux>(DebuffCardInit);
 
             void DebuffCardInit(CardInfo c)
             {
