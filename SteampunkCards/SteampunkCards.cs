@@ -87,7 +87,6 @@ namespace SteampunkCards
             CustomCard.BuildCard<CartridgeConcession>(DebuffCardInit);
             CustomCard.BuildCard<GravitronClamp>(DebuffCardInit);
             CustomCard.BuildCard<VelocityDampener>(DebuffCardInit);
-            CustomCard.BuildCard<GravitationalFlux>(DebuffCardInit);
 
             void DebuffCardInit(CardInfo c)
             {
