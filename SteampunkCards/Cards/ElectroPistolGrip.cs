@@ -40,12 +40,12 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "";
+            return "Bullets stun your enemies";
         }
 
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.C_ElectroPistolGrip;
         }
 
         protected override CardInfo.Rarity GetRarity()

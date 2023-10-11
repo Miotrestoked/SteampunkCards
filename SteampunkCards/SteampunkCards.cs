@@ -81,12 +81,6 @@ namespace SteampunkCards
             CustomCard.BuildCard<ExoSuit>();
             CustomCard.BuildCard<BrassBulwark>();
             CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
-            
-            void BuffCardInit(CardInfo c)
-            {
-                cards.AddHiddenCard(c);
-                buffCards.Add(c);
-            }
 
             void DebuffCardInit(CardInfo c)
             {
@@ -101,6 +95,7 @@ namespace SteampunkCards
 
             return cards.GetCardWithObjectName($"__{ModInitials}__{cardName}");
         }
+        
         
         
     }

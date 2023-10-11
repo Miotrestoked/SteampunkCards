@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <RoundsFolder>E:\SteamLibrary\steamapps\common\ROUNDS</RoundsFolder>
+        <RoundsFolder>D:\SteamLibrary\steamapps\common\ROUNDS</RoundsFolder>
     </PropertyGroup>
     
     <ItemGroup>
@@ -31,9 +31,17 @@
       <Reference Include="UnityEngine">
         <HintPath>$(RoundsFolder)\Rounds_Data\Managed\UnityEngine.dll</HintPath>
       </Reference>
+      <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>D:\SteamLibrary\steamapps\common\ROUNDS\Rounds_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      </Reference>
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>$(RoundsFolder)\Rounds_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       </Reference>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Remove="AssetsEmbedded\assets" />
+      <EmbeddedResource Include="AssetsEmbedded\assets" />
     </ItemGroup>
     
     

@@ -36,7 +36,7 @@ namespace SteampunkCards.Cards
 
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.C_JumpEnhancer;
         }
 
         protected override CardInfo.Rarity GetRarity()

@@ -38,7 +38,7 @@ namespace SteampunkCards.Cards
 
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.C_MultiBarrelSteamShotgun;
         }
 
         protected override CardInfo.Rarity GetRarity()
