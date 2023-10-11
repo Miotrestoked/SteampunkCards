@@ -31,7 +31,7 @@ namespace SteampunkCards.Cards.Curses
 
         protected override string GetDescription()
         {
-            return "";
+            return "Resets your ammo to 3";
         }
         
         public override bool GetEnabled()
@@ -53,13 +53,6 @@ namespace SteampunkCards.Cards.Curses
         {
             return new CardInfoStat[]
             {
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "",
-                    amount = "Ammo reset",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
-                }
             };
         }
 

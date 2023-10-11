@@ -33,7 +33,7 @@ namespace SteampunkCards.Cards
 
         protected override string GetDescription()
         {
-            return "";
+            return "Your ammo will set set to 6";
         }
 
         protected override GameObject GetCardArt()
@@ -53,7 +53,7 @@ namespace SteampunkCards.Cards
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Max ammo",
+                    stat = "Ammo",
                     amount = "6",
                     simepleAmount = CardInfoStat.SimpleAmount.Some
                 },
