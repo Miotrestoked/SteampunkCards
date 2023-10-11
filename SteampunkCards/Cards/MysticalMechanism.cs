@@ -24,7 +24,7 @@ namespace SteampunkCards.Cards
             opponents.ForEach(opp =>
             {
                 int roll = new System.Random().Next(0, SteampunkCards.debuffCards.Count);
-                cards.AddCardToPlayer(opp, SteampunkCards.FindCard(SteampunkCards.debuffCards[roll].name), false, ":(", 0, 0);
+                cards.AddCardToPlayer(opp, SteampunkCards.debuffCards[roll], false, ":(", 0, 0);
             });
         }
 

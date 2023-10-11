@@ -36,7 +36,7 @@ namespace SteampunkCards.Cards.Curses
         
         public override bool GetEnabled()
         {
-            return true;
+            return false;
         }
 
         protected override GameObject GetCardArt()
