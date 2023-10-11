@@ -80,7 +80,11 @@ namespace SteampunkCards
             CustomCard.BuildCard<PneumaticArmor>();
             CustomCard.BuildCard<ExoSuit>();
             CustomCard.BuildCard<BrassBulwark>();
+            CustomCard.BuildCard<CogsOfConstraint>();
+            
+            
             CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
+            CustomCard.BuildCard<GyroscopicAnchor>(DebuffCardInit);
 
             void DebuffCardInit(CardInfo c)
             {

@@ -3,19 +3,19 @@ using UnityEngine;
 
 namespace SteampunkCards.Cards.Curses
 {
-    class ZoomedIn : CustomCard
+    class CardridgeConcession : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats,
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            statModifiers.sizeMultiplier = 1.15f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Edits values on player when card is selected
+            gunAmmo.maxAmmo = 3;
         }
 
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -26,7 +26,7 @@ namespace SteampunkCards.Cards.Curses
 
         protected override string GetTitle()
         {
-            return "Zoomed In";
+            return "Cartridge Concession";
         }
 
         protected override string GetDescription()
@@ -56,8 +56,8 @@ namespace SteampunkCards.Cards.Curses
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Size",
-                    amount = "+10%",
+                    stat = "",
+                    amount = "Ammo reset",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };

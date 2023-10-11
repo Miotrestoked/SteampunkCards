@@ -1,20 +1,26 @@
+using System.Collections.Generic;
+using ModdingUtils.Utils;
 using UnboundLib.Cards;
 using UnityEngine;
 
-namespace SteampunkCards.Cards.Curses
+namespace SteampunkCards.Cards
 {
-    class ZoomedIn : CustomCard
+    class CogsOfConstraint : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats,
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            statModifiers.sizeMultiplier = 1.15f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
             HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            List<Player> opponents = PlayerStatus.GetEnemyPlayers(player);
+            
+            var cards = ModdingUtils.Utils.Cards.instance;
+            
+            opponents.ForEach(opp => cards.AddCardToPlayer(opp, SteampunkCards.FindCard("Gyroscopic Anchor"), false, "ZI", 0, 0));
             //Edits values on player when card is selected
         }
 
@@ -26,17 +32,12 @@ namespace SteampunkCards.Cards.Curses
 
         protected override string GetTitle()
         {
-            return "Zoomed In";
+            return "Cogs of Constraint";
         }
 
         protected override string GetDescription()
         {
-            return "";
-        }
-        
-        public override bool GetEnabled()
-        {
-            return false;
+            return "The movement speed of all enemies is reduced by 30%";
         }
 
         protected override GameObject GetCardArt()
@@ -46,26 +47,19 @@ namespace SteampunkCards.Cards.Curses
 
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Common;
+            return CardInfo.Rarity.Uncommon;
         }
 
         protected override CardInfoStat[] GetStats()
         {
             return new CardInfoStat[]
             {
-                new CardInfoStat()
-                {
-                    positive = false,
-                    stat = "Size",
-                    amount = "+10%",
-                    simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
-                }
             };
         }
 
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.ColdBlue;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
 
         public override string GetModName()

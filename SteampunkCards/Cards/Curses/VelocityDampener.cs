@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace SteampunkCards.Cards.Curses
 {
-    class ZoomedIn : CustomCard
+    class VelocityDampener : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats,
             CharacterStatModifiers statModifiers, Block block)
         {
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-            statModifiers.sizeMultiplier = 1.15f;
+            gun.projectileSpeed = 0.70f;
         }
 
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data,
@@ -26,7 +26,7 @@ namespace SteampunkCards.Cards.Curses
 
         protected override string GetTitle()
         {
-            return "Zoomed In";
+            return "Velocity Dampener";
         }
 
         protected override string GetDescription()
@@ -56,8 +56,8 @@ namespace SteampunkCards.Cards.Curses
                 new CardInfoStat()
                 {
                     positive = false,
-                    stat = "Size",
-                    amount = "+10%",
+                    stat = "Bullet speed",
+                    amount = "-30%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
