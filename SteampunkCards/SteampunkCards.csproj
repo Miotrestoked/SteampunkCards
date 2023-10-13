@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <RoundsFolder>E:\SteamLibrary\steamapps\common\ROUNDS</RoundsFolder>
+        <RoundsFolder>D:\SteamLibrary\steamapps\common\ROUNDS</RoundsFolder>
     </PropertyGroup>
     
     <ItemGroup>

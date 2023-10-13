@@ -37,7 +37,7 @@ namespace SteampunkCards.Cards
 
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.C_PressureRegulatingChestplate;
         }
 
         protected override CardInfo.Rarity GetRarity()
