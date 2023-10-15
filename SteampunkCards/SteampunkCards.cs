@@ -43,7 +43,7 @@ namespace SteampunkCards
         void loadCards()
         {
             var cards = ModdingUtils.Utils.Cards.instance;
-            
+
             CustomCard.BuildCard<AegisRejuvenatorUnit>();
             CustomCard.BuildCard<BarrierGenerator>();
             CustomCard.BuildCard<CacheAugmentator>();
@@ -82,17 +82,37 @@ namespace SteampunkCards
             CustomCard.BuildCard<BrassBulwark>();
             CustomCard.BuildCard<CogsOfConstraint>();
             CustomCard.BuildCard<MysticalMechanism>();
-            
+            CustomCard.BuildCard<MechanicalMomentum>();
+            CustomCard.BuildCard<GyroscopicGlide>();
+            CustomCard.BuildCard<GearsOfFortune>();
+            CustomCard.BuildCard<GamblersFolly>();
+
+            //curses
             CustomCard.BuildCard<ZoomedIn>(DebuffCardInit);
             CustomCard.BuildCard<GyroscopicAnchor>(DebuffCardInit);
             CustomCard.BuildCard<CartridgeConcession>(DebuffCardInit);
             CustomCard.BuildCard<GravitronClamp>(DebuffCardInit);
             CustomCard.BuildCard<VelocityDampener>(DebuffCardInit);
+            CustomCard.BuildCard<EnfeebledGun>(DebuffCardInit);
+            CustomCard.BuildCard<PlaguedDefenses>(DebuffCardInit);
+
+            //blessings
+            CustomCard.BuildCard<MinitiaturizationModule>(BuffCardInit);
+            CustomCard.BuildCard<PistonPlating>(BuffCardInit);
+            CustomCard.BuildCard<VelocityVest>(BuffCardInit);
+            CustomCard.BuildCard<GildedDeflector>(BuffCardInit);
+            CustomCard.BuildCard<SteamflowRestoration>(BuffCardInit);
 
             void DebuffCardInit(CardInfo c)
             {
                 cards.AddHiddenCard(c);
                 debuffCards.Add(c);
+            }
+
+            void BuffCardInit(CardInfo c)
+            {
+                cards.AddHiddenCard(c);
+                buffCards.Add(c);
             }
         }
 
@@ -102,8 +122,8 @@ namespace SteampunkCards
 
             return cards.GetCardWithObjectName($"__{ModInitials}__{cardName}");
         }
-        
-        
-        
+
+
+
     }
 }
