@@ -135,7 +135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9437677126dc1c745880f09b2debdef1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d07ae0d8dd01b6842a33f6f28f9e6f50, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837588125075127445}
   m_Layer: 2
-  m_Name: C_CogwheelEnhancedBullet
+  m_Name: C_CogwheelEnhancedBullets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

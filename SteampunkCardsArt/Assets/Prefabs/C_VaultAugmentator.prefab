@@ -135,7 +135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 26a2264091ec5e14398fb5289879fc21, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 107bdc3343cc74d4da474bf08b4a590e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3747730087110406031}
   m_Layer: 2
-  m_Name: C_VaultExtension
+  m_Name: C_VaultAugmentator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

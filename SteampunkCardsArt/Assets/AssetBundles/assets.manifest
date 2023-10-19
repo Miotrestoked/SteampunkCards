@@ -1,77 +1,69 @@
 ManifestFileVersion: 0
-CRC: 3442493429
+CRC: 3734219688
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 78648c510c22d5817c87d0078bcd0bca
+    Hash: 18c4e6b92d23e19ab6744fd438e90aa9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0c614afd430f6843b9ab49bb66a49a3d
+    Hash: 0a2eb74e0559ef57955f05c62a3fc9bf
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
-- Class: 4
-  Script: {instanceID: 0}
 - Class: 28
   Script: {instanceID: 0}
-- Class: 74
-  Script: {instanceID: 0}
-- Class: 91
-  Script: {instanceID: 0}
-- Class: 95
-  Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-- Class: 114
-  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 213
   Script: {instanceID: 0}
 - Class: 222
   Script: {instanceID: 0}
-- Class: 223
-  Script: {instanceID: 0}
 - Class: 224
   Script: {instanceID: 0}
-- Class: 225
-  Script: {instanceID: 0}
 Assets:
-- Assets/Prefabs/Sample Card.prefab
-- Assets/Prefabs/C_BarrierRegenerator.prefab
-- Assets/Prefabs/C_SteamPoweredBoots.prefab
-- Assets/Prefabs/C_CogwheelMedpack.prefab
-- Assets/Prefabs/C_SteamFortress.prefab
-- Assets/Prefabs/C_BoilerplateShoulderStock.prefab
-- Assets/Prefabs/C_CacheAugmentator.prefab
-- Assets/Prefabs/C_PressureBoostedBullets.prefab
-- Assets/Prefabs/C_DeflectorArray.prefab
-- Assets/Prefabs/C_GearDrivenSniperScope.prefab
-- Assets/Prefabs/C_VaultAugmentator.prefab
-- Assets/Prefabs/C_LeapAmplifier.prefab
-- Assets/Prefabs/C_AegisRejuvenatorUnit.prefab
-- Assets/Prefabs/C_ElectroPistolGrip.prefab
-- Assets/Prefabs/C_SteamPoweredRailgun.prefab
-- Assets/Prefabs/C_JumpEnhancer.prefab
-- Assets/Prefabs/C_MechanicalHeartImplant.prefab
-- Assets/Prefabs/C_CogwheelEnhancedBullets.prefab
-- Assets/Prefabs/C_TemporalModulator.prefab
-- Assets/Prefabs/C_SteamEnhancedAmmoLoader.prefab
-- Assets/Prefabs/C_RapidReloadBandolier.prefab
-- Assets/Prefabs/C_MultiBarrelSteamShotgun.prefab
-- Assets/Prefabs/C_ExpandedReservoir.prefab
-- Assets/Prefabs/C_GatlingSteamGun.prefab
-- Assets/Prefabs/C_BrassEjectorMechanism.prefab
-- Assets/Prefabs/C_ClockworkTriggerMechanism.prefab
-- Assets/Prefabs/C_PressureRegulatingChestplate.prefab
-- Assets/Prefabs/C_PneumaticRifleStock.prefab
 - Assets/Prefabs/C_Goggles.prefab
-- Assets/Prefabs/C_SteamPoweredRevolver.prefab
-- Assets/Prefabs/C_ClockworkWingsuit.prefab
+- Assets/Prefabs/C_CogwheelEnhancedBullets.prefab
+- Assets/Prefabs/C_MultiBarrelSteamShotgun.prefab
+- Assets/Prefabs/C_SteamPoweredRailgun.prefab
+- Assets/Prefabs/C_GatlingSteamGun.prefab
+- Assets/Prefabs/C_PressureRegulatingChestplate.prefab
+- Assets/Prefabs/C_PneumaticArmor.prefab
+- Assets/Prefabs/C_PneumaticRifleStock.prefab
+- Assets/Prefabs/C_SteamFortress.prefab
+- Assets/Prefabs/C_RapidReloadBandolier.prefab
+- Assets/Prefabs/C_SteamPoweredBoots.prefab
+- Assets/Prefabs/C_JumpEnhancer.prefab
+- Assets/Prefabs/C_PressureBoostedBullets.prefab
+- Assets/Prefabs/C_ElectroPistolGrip.prefab
+- Assets/Prefabs/C_BrassBulwark.prefab
+- Assets/Prefabs/C_ExpandedReservoir.prefab
+- Assets/Prefabs/C_CacheAugmentator.prefab
+- Assets/Prefabs/C_BoilerplateArmorPiercingRounds.prefab
+- Assets/Prefabs/C_GearsOfFortune.prefab
+- Assets/Prefabs/C_BarrierRegenerator.prefab
 - Assets/Prefabs/C_ChamberExtension.prefab
+- Assets/Prefabs/C_AegisRejuvenatorUnit.prefab
+- Assets/Prefabs/C_ClockworkWingsuit.prefab
+- Assets/Prefabs/C_TemporalModulator.prefab
+- Assets/Prefabs/C_LeapAmplifier.prefab
+- Assets/Prefabs/C_GamblersFolly.prefab
+- Assets/Prefabs/C_CogsOfConstraint.prefab
+- Assets/Prefabs/C_MechanicalHeartImplant.prefab
+- Assets/Prefabs/C_GearDrivenSniperScope.prefab
+- Assets/Prefabs/C_BrassEjectorMechanism.prefab
+- Assets/Prefabs/C_MechanicalMomentum.prefab
+- Assets/Prefabs/C_CogwheelMedpack.prefab
+- Assets/Prefabs/C_MysticalMechanism.prefab
+- Assets/Prefabs/C_DeflectorArray.prefab
+- Assets/Prefabs/C_VaultAugmentator.prefab
+- Assets/Prefabs/C_SquishPiston.prefab
+- Assets/Prefabs/C_SteamEnhancedAmmoLoader.prefab
+- Assets/Prefabs/C_ExoSuit.prefab
+- Assets/Prefabs/C_BoilerplateShoulderStock.prefab
+- Assets/Prefabs/C_GyroscopicGlide.prefab
+- Assets/Prefabs/C_SteamPoweredRevolver.prefab
+- Assets/Prefabs/C_ClockworkTriggerMechanism.prefab
 Dependencies: []

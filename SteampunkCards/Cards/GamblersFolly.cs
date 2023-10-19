@@ -48,7 +48,7 @@ namespace SteampunkCards.Cards.Curses
 
         protected override GameObject GetCardArt()
         {
-            return null;
+            return Assets.C_GamblersFolly;
         }
 
         protected override CardInfo.Rarity GetRarity()

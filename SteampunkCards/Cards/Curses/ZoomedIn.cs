@@ -57,7 +57,7 @@ namespace SteampunkCards.Cards.Curses
                 {
                     positive = false,
                     stat = "Size",
-                    amount = "+10%",
+                    amount = "+15%",
                     simepleAmount = CardInfoStat.SimpleAmount.aLittleBitOf
                 }
             };
